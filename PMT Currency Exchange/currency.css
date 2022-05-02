@@ -1,0 +1,474 @@
+:root{
+    --headerfont-font-family: font-family: 'Paytone One', sans-serif;
+    --bodyfont-font-family: font-family: 'Baloo 2', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(203, 241, 255);
+}
+
+::placeholder{
+    opacity: .7;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, button:hover, button:focus, button:active {
+    text-decoration: none;
+    color: inherit;
+}
+/* HEADER......................................................... */
+.topbar{
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(66, 66, 66) !important;
+
+}
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.9) 10%, rgba(233, 246, 255, 0.9) 80%), url(images/dollas.jpg) no-repeat;
+    background-size: cover;
+    padding: 50px 0 0 0;
+}
+
+.banner img{
+    display: block;
+    width: 7vw;
+    margin: auto;
+    padding: 0 0 0 30;
+}
+
+.text-container{
+    width: 60%;
+    margin: auto;
+
+}
+
+.text-container h1{
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+    font-family: var(--headerfont-font-family);
+    font-weight: 600;
+
+}
+
+.text-container h4{
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    font-family: var(--bodyfont-font-family);
+    font-weight: 500;
+
+}
+
+
+/* CALCULATE SECTION........................................ */
+
+.calc-section{
+    width: 100%;
+    padding: 10px;
+
+}
+
+.calc-container{
+    margin: auto;
+    margin-top: -100px;
+    width: 70%;
+    height: 30vh;
+    padding: 20px;
+    background-color: rgba(238, 151, 21, 0.9);
+    box-shadow:10px 5px 5px rgb(255, 255, 255); ;
+    border-radius: 20px;
+
+}
+
+.assembly-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.assembly-line input{
+    width: 10rem;
+    margin-right: 3rem;
+    font-family: var(--bodyfont-font-family);
+    font-size: 18px;
+    padding: 15px 1px;
+    border-radius: 20px;
+    border: solid rgb(203, 203, 203) 1px;
+    text-align: center;
+    outline: none;
+}
+
+
+.arrow{
+    width: 0;
+    height: 0;
+    border-left: 12.5px solid transparent;
+    border-right: 12.5px solid transparent;
+    border-bottom: 25px solid rgb(167, 0, 0);
+    transform: rotate(90deg);
+    transition: all .3s ease-in-out;
+
+}
+
+.assembly-line img{
+    max-width: 60px ;
+    transition: all 1s ease-in-out;
+}
+
+.assembly-line h3{
+    width: 10rem;
+    margin-left: 3rem;
+    padding: 10px;
+    font-family: var(--bodyfont-font-family);
+    font-size: 33px;
+    color: rgb(0, 101, 55);
+    /* border: solid red; */
+
+}
+
+#calculate-button{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 60px;
+    font-family: var(--bodyfont-font-family);
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/* FOOTER.................................................... */
+footer{
+    padding: 10px;
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(238, 238, 238);
+    color: white;
+    margin-top: 15rem;
+
+}
+
+/* MOBILE DESIGN./././././../././//././././././././././././././././././ */
+
+@media screen and (max-width: 700px){
+
+
+    /* HEADER......................................................... */
+.topbar{
+    /* width: 100vw; */
+    height: 8vh;
+    /* background-color: rgb(66, 66, 66) !important; */
+
+}
+
+.banner{
+    /* width: 100vw; */
+    height: 548px;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0.9) 10%, rgba(233, 246, 255, 0.9) 80%), url(images/dollas.jpg) no-repeat; */
+    /* background-size: cover; */
+    /* padding: 50px 0 0 0; */
+}
+
+.banner img{
+    /* display: block; */
+    width: 30vw;
+    /* margin: auto; */
+    /* padding: 0 0 0 30; */
+}
+
+.text-container{
+    width: 95%;
+    /* margin: auto; */
+
+}
+
+.text-container h1{
+    margin-top: 35px;
+    /* text-align: center; */
+    padding: 10px;
+    font-size: 40px;
+    /* font-family: var(--headerfont-font-family); */
+    /* font-weight: 600; */
+    line-height: 1.4;
+
+}
+
+.text-container h4{
+    /* text-align: center; */
+    padding: 10px;
+    font-size: 21px;
+    /* font-family: var(--bodyfont-font-family); */
+    font-weight: 600;
+    line-height: 1.4;
+
+}
+
+
+/* CALCULATE SECTION........................................ */
+
+.calc-section{
+    /* width: 100%; */
+    padding: 5px;
+
+}
+
+.calc-container{
+    /* margin: auto; */
+    /* margin-top: -100px; */
+    width: 97%;
+    height: 112vh;
+    padding: 10px;
+    /* background-color: rgba(238, 151, 21, 0.9); */
+    /* box-shadow:10px 5px 5px rgb(255, 255, 255); ; */
+    /* border-radius: 20px; */
+
+}
+
+.assembly-line{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.assembly-line input{
+    width: 30%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    /* font-family: var(--bodyfont-font-family); */
+    font-size: 16px;
+    /* padding: 15px 1px; */
+    /* border-radius: 20px; */
+    /* border: solid rgb(203, 203, 203) 1px; */
+    /* text-align: center; */
+    /* outline: none; */
+}
+
+
+.arrow{
+    /* width: 0; */
+    /* height: 0; */
+    /* border-left: 12.5px solid transparent; */
+    /* border-right: 12.5px solid transparent; */
+    /* border-bottom: 25px solid rgb(167, 0, 0); */
+    transform: rotate(180deg);
+    /* transition: all .3s ease-in-out; */
+
+}
+
+.assembly-line img{
+    /* max-width: 60px ; */
+    /* transition: all 1s ease-in-out; */
+}
+
+.assembly-line h3{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+    /* padding: 10px; */
+    /* font-family: var(--bodyfont-font-family); */
+    font-size: 40px;
+    text-align: center;
+    /* color: rgb(0, 101, 55); */
+    /* border: solid red; */
+
+}
+
+#calculate-button{
+    /* display: block; */
+    /* margin: auto; */
+    /* margin-top: 50px; */
+    /* padding: 20px 60px; */
+    /* font-family: var(--bodyfont-font-family); */
+    font-size: 18px;
+    /* border: none; */
+    /* background-color: white; */
+    /* border-radius: 30px; */
+}
+
+/* FOOTER.................................................... */
+footer{
+    /* padding: 10px; */
+    /* width: 100vw; */
+    /* height: 10vh; */
+    position: relative;
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* background-color: rgb(238, 238, 238); */
+    /* color: white; */
+    margin-top: 10rem;
+
+}
+}
+
+@media (min-width: 701px) and (max-width: 1470px){
+    /* HEADER......................................................... */
+.topbar{
+    /* width: 100vw; */
+    /* height: 6vh; */
+    /* background-color: rgb(66, 66, 66) !important; */
+
+}
+
+.banner{
+    width: 100%;
+    height: 58vh;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0.9) 10%, rgba(233, 246, 255, 0.9) 80%), url(images/dollas.jpg) no-repeat; */
+    /* background-size: cover; */
+    /* padding: 50px 0 0 0; */
+}
+
+.banner img{
+    /* display: block; */
+    width: 16vw;
+    /* margin: auto; */
+    /* padding: 0 0 0 30; */
+}
+
+.text-container{
+    width: 80%;
+    /* margin: auto; */
+
+}
+
+.text-container h1{
+    margin-top: 40px;
+    /* text-align: center; */
+    padding: 10px;
+    font-size: 45px;
+    /* font-family: var(--headerfont-font-family); */
+    /* font-weight: 600; */
+
+}
+
+.text-container h4{
+    /* text-align: center; */
+    /* padding: 15px; */
+    /* font-size: 25px; */
+    /* font-family: var(--bodyfont-font-family); */
+    /* font-weight: 500; */
+    margin-top: 20px;
+
+}
+
+
+/* CALCULATE SECTION........................................ */
+
+.calc-section{
+    /* width: 100%; */
+    padding: 5px;
+
+}
+
+.calc-container{
+    /* margin: auto; */
+    margin-top: -120px;
+    width: 95%;
+    height: 28vh;
+    padding: 5px;
+    /* background-color: rgba(238, 151, 21, 0.9); */
+    /* box-shadow:10px 5px 5px rgb(255, 255, 255); ; */
+    /* border-radius: 20px; */
+
+}
+
+.assembly-line{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 15px;
+    /* margin-top: 60px; */
+}
+
+.assembly-line input{
+    width: 5rem;
+    margin-right: .5rem;
+    /* font-family: var(--bodyfont-font-family); */
+    font-size: 17px;
+    /* padding: 15px 1px; */
+    /* border-radius: 20px; */
+    /* border: solid rgb(203, 203, 203) 1px; */
+    /* text-align: center; */
+    /* outline: none; */
+}
+
+
+.arrow{
+    /* width: 0; */
+    /* height: 0; */
+    /* border-left: 12.5px solid transparent; */
+    /* border-right: 12.5px solid transparent; */
+    /* border-bottom: 25px solid rgb(167, 0, 0); */
+    /* transform: rotate(90deg); */
+    /* transition: all .3s ease-in-out; */
+
+}
+
+.assembly-line img{
+    /* max-width: 60px ; */
+    /* transition: all 1s ease-in-out; */
+}
+
+.assembly-line h3{
+    width: 5rem;
+    margin-left: .5rem;
+    padding: 5px;
+    /* font-family: var(--bodyfont-font-family); */
+    font-size: 21px;
+    /* color: rgb(0, 101, 55); */
+    /* border: solid red; */
+
+}
+
+#calculate-button{
+    /* display: block; */
+    /* margin: auto; */
+    margin-top: 70px;
+    /* padding: 20px 60px; */
+    /* font-family: var(--bodyfont-font-family); */
+    font-size: 18px;
+    /* border: none; */
+    /* background-color: white; */
+    /* border-radius: 30px; */
+}
+
+/* FOOTER.................................................... */
+footer{
+    /* padding: 10px; */
+    /* width: 100vw; */
+    /* height: 10vh; */
+    /* position: relative; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* background-color: rgb(238, 238, 238); */
+    /* color: white; */
+    margin-top: 11rem;
+
+}
+}
